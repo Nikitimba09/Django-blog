@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'blog.apps.BlogConfig',
+    'taggit',
 
 ]
 
@@ -127,3 +128,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Конфигурация сервера электронной почты
+EMAIL_HOST = 'smtp.yandex.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'nikita5hataloff@yandex.ru'
+EMAIL_HOST_PASSWORD = 'cCc-sSK-kwY-srA'
+EMAIL_USE_SSL = True
